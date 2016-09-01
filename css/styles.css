@@ -1,0 +1,7 @@
+*{
+	font-family: 'Ubuntu', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+.center-text{
+	text-align: center
+}
