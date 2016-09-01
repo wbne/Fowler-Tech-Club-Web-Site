@@ -3,5 +3,8 @@
 	-webkit-font-smoothing: antialiased;
 }
 .center-text{
-	text-align: center
+	text-align: center;
+}
+p{
+	text-align: left;
 }
