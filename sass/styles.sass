@@ -12,6 +12,7 @@
 	padding-left: 200px
 	padding-right: 200px
 	text-align: center
+	line-height: 30px
 
 .center-image
 	display: block
@@ -60,7 +61,7 @@ nav#drop-down
 			height: 65px
 			line-height: 65px
 			position: relative
-			font-size: 14px
+			font-size: 17px
 			color: rgba(40,0,0,0.7)
 			cursor: pointer
 			z-index: 2
@@ -86,6 +87,13 @@ ul.menu-1 li
 	display: none
 li:hover > ul.drop-down li
 	display: block
+
+// menu 1
+li:hover > ul.menu-1 li
+	
+@keyframe drop-down-animation
+	0%
+	100%
 
 *
 	margin-bottom: 0
