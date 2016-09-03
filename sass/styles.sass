@@ -18,13 +18,23 @@
 	margin-left: auto
 	margin-right: auto
 
+.parallax
+	position: relative
+	height: 400px
+	background:
+		image: url(../imgs/octocat.jpg)
+		size: contain
+		position: top center
+		attachment: fixed
+	z-index: 1
+
 body
 	margin: 0px
 	padding: 0px
 
 .title
 	padding-top: 30px
-	padding-bottom: 40px
+	padding-bottom: 0px
 	background-color: #333
 	font-size: 20px
 	color: #aaa
@@ -36,7 +46,6 @@ body
 nav#drop-down
 	padding: 50px
 	text-align: center
-
 	> ul
 		list-style: none
 		padding: 0
@@ -53,7 +62,7 @@ nav#drop-down
 			font-size: 14px
 			color: rgba(40,0,0,0.7)
 			cursor: pointer
-
+			z-index: 2
 			&:hover
 				background: #ddd
 				border-radius: 5px
@@ -64,8 +73,9 @@ ul.drop-down
 	left: 0%
 	padding: 0
 	li
-		background: #666
-		color: rgba(255,255,255,0.7)
+		border-radius: 5px
+		background: #a2a2a2
+		color: rgba(0,0,0,0.7)
 
 		&:hover
 			background: #606060
