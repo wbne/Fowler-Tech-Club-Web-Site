@@ -3,6 +3,9 @@
 	text-shadow: rgba(0,0,0,.01) 0 0 1px
 	font-smooth: always
 	color: #eee
+a
+	text-decoration: none
+	color: lightblue
 .content-wrap
 	background-color: #777
 
@@ -76,8 +79,8 @@ ul.drop-down
 	padding: 0
 	li
 		border-radius: 5px
-		background: #a2a2a2
-		color: rgba(0,0,0,0.7)
+		background: #1a1a1a
+		color: #ADD8E6
 
 		&:hover
 			background: #606060
@@ -90,7 +93,19 @@ li:hover > ul.drop-down li
 
 // menu 1
 li:hover > ul.menu-1 li
-	
+	opacity: 0
+	animation:
+		name: menu-1-anime
+		duration: 300ms
+		timing-function: ease-in-out
+		fill-mode: forwards
 
 *
 	margin-bottom: 0
+
+// Animation section //
+@keyframes menu-1-anime
+	0%
+		opacity: 0
+	100%
+		opacity: 1
