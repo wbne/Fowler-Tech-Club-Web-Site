@@ -3,6 +3,9 @@
 	text-shadow: rgba(0,0,0,.01) 0 0 1px
 	font-smooth: always
 	color: #eee
+a
+	text-decoration: none
+	color: lightblue
 .content-wrap
 	background-color: #777
 
@@ -57,7 +60,7 @@ nav#drop-down
 		border-radius: 5px
 		> li
 			float: left
-			width: 150px
+			width: 250px
 			height: 65px
 			line-height: 65px
 			position: relative
@@ -76,8 +79,8 @@ ul.drop-down
 	padding: 0
 	li
 		border-radius: 5px
-		background: #a2a2a2
-		color: rgba(0,0,0,0.7)
+		background: #1a1a1a
+		color: #ADD8E6
 
 		&:hover
 			background: #606060
@@ -89,8 +92,34 @@ li:hover > ul.drop-down li
 	display: block
 
 // menu 1
-li:hover > ul.menu-1 li
+li:hover > ul.menu-1
 	
-
+	perspective: 1000px
+	
+	li
+		opacity: 0
+		
+		animation:
+			name: menu-1-anime
+			duration: 300ms
+			timing-function: ease-in-out
+			fill-mode: forwards
 *
 	margin-bottom: 0
+
+// ANIMATION keyframes //
+
+@keyframes menu-1-anime // anime is short for animation
+	0%
+		opacity: 0
+		transform: rotateY(-90deg) translateY(30px)
+	100%
+		opacity: 1
+		transform: rotateY(0deg) translateY(0px)
+@-webkit-keyframes menu-1-anime
+	0%
+		opacity: 0
+		transform: rotateY(-90deg) translateY(30px)
+	100%
+		opacity: 1
+		transform: rotateY(0deg) translateY(0px)
