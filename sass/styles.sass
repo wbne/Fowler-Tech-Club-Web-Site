@@ -1,13 +1,16 @@
 $backgroundColor: #1a1a1a
 $textColor: #ADD8E6
 
-*
+body
+	margin: 0px
+	padding: 0px
 	font-family: 'Source Code Pro', monospace
 	text-shadow: rgba(0,0,0,.01) 0 0 1px
 	font-smooth: always
 	color: #eee
 	background: $backgroundColor
 	color: $textColor
+	
 a
 	text-decoration: none
 	color: lightblue
@@ -36,10 +39,6 @@ a
 		position: top center
 		attachment: fixed
 	z-index: 1
-
-body
-	margin: 0px
-	padding: 0px
 
 .title
 	padding-top: 30px
@@ -85,6 +84,7 @@ nav#drop-down
 					timing-function: ease-in-out
 					fill-mode: forwards
 
+
 ul.drop-down
 	position: absolute
 	top: 100%
@@ -100,6 +100,10 @@ ul.drop-down
 			background: #606060
 		&:last-child
 			border-radius: 0px 0px 5px 5px
+
+		> a
+			display: block
+
 ul.menu-1 li
 	display: none
 li:hover > ul.drop-down li
