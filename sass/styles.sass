@@ -1,5 +1,4 @@
-$backgroundColor: #1a1a1a
-$textColor: #ADD8E6
+@import variables
 
 *
 	font-family: 'Source Code Pro', monospace
@@ -60,7 +59,7 @@ nav#drop-down
 		margin: 0
 		display: inline-block
 		background: #d5d5d5
-		border-radius: 5px
+
 		> li
 			float: left
 			width: 250px
@@ -68,7 +67,6 @@ nav#drop-down
 			line-height: 65px
 			position: relative
 			font-size: 17px
-			//border-radius: 5px
 			border-width: 1px
 			cursor: pointer
 			z-index: 2
@@ -92,7 +90,6 @@ ul.drop-down
 	left: 0%
 	padding: 0
 	li
-		border-radius: 5px
 		background: $backgroundColor
 		color: $textColor
 
