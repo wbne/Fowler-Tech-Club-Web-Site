@@ -1,15 +1,12 @@
-@import variables
+@import compass
+@import partials/variables
+@import partials/normalize
+@import partials/base
 
 body
-	margin: 0px
-	padding: 0px
-	font-family: 'Source Code Pro', monospace
-	text-shadow: rgba(0,0,0,.01) 0 0 1px
-	font-smooth: always
-	color: #eee
 	background: $backgroundColor
 	color: $textColor
-	
+
 a
 	text-decoration: none
 	color: lightblue
@@ -61,11 +58,11 @@ nav#drop-down
 
 		> li
 			float: left
-			width: 250px
-			height: 65px
+			width: 150px
+			height: 100px
 			line-height: 65px
 			position: relative
-			font-size: 17px
+			font-size: 15px
 			border-width: 1px
 			cursor: pointer
 			z-index: 2
@@ -91,7 +88,7 @@ ul.drop-down
 	left: 0%
 	padding: 0
 	li
-		background: #272727  
+		background: #272727
 		color: $textColor
 
 		&:hover
@@ -145,12 +142,12 @@ li:hover > ul.menu-1
 		background-color: #000
 		border-color: currentColor
 	100%
-		background-color: #272727 
-		border-color: $backgroundColor 
+		background-color: #272727
+		border-color: $backgroundColor
 @-webkit-keyframes menu-1-color-anime
 	0%
 		background-color: #000
 		border-color: currentColor
 	100%
-		background-color: #272727 
-		border-color: $backgroundColor 
+		background-color: #272727
+		border-color: $backgroundColor
