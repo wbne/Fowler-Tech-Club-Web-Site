@@ -1,9 +1,9 @@
-// this is for plain JavaScript
+function openNav() {
+	$('#mainSideNav').css("width", "250px");
+}
 
-// END plain JavaScript
+function closeNav() {
+	$("#mainSideNav").css("width", "0px");
+}
 
-$(document).ready(function(){
-
-	// here is where all the JQuery will go...
-
-});
+$(document).ready(function(){});

@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script src="scripts/script.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 	</head>
@@ -10,11 +11,10 @@
 		<nav class="title">
 			<h1 class="center-text">Fowler Tech Club!</h1>
 			<!-- This is drop-down menu 1 -->
-			<nav id="drop-down">
+			<!--<nav id="drop-down">
 				<ul>
 					<li>Members
 						<ul class="drop-down menu-1">
-							<!-- Member drop down menu, list of members -->
 							<li><a href="https://github.com/Pranoydll" target="_blank">Pranoy D.</a></li>
 							<li><a href="https://github.com/Bubadabado" target="_blank">Adam R.</a></li>
 							<li><a href="https://github.com/wbne" target="_blank">Benjamin W.</a></li>
@@ -26,9 +26,18 @@
 						</ul>
 					</li>
 				</ul>
-			</nav>
+			</nav>-->
+
+			<div id="mainSideNav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="#">Members</a>
+				<a href="#">About Us</a>
+			</div>
+
+			<span onclick="openNav()"><img src="imgs/hambtn.png"></span>
 		</nav>
-		<div class="content-wrap">
+
+		<div id="content-wrap">
 			<div class="parallax"></div>
 			<!-- Main body paragraph -->
 			<p class="center-text">Lorem ipsum dolor sit amet, oratio essent vel ex, ut pri modo voluptaria ullamcorper, velit ubique saperet ea pro. Ut nec elit altera. Vim dicam postulant sententiae in. Mucius albucius volutpat ut mea, cu qui malis qualisque conclusionemque. Duo ad quod dicit vulputate, per sale eligendi no.
