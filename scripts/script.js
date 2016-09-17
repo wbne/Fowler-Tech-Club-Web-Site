@@ -1,3 +1,10 @@
+var bodyHeight = 0;
+
+$(function(){
+	bodyHeight = $(document).height();
+});
+
+
 function openNav() {
 	$('#mainSideNav').css("width", "250px");
 	$('#mainSideNav').css("opacity", "1");
@@ -23,3 +30,8 @@ $(document).ready(function(){
 		$('#playMusic').css('display', 'block');
 	});
 });
+
+while(true)
+{
+	$('#mainSideNav').height(bodyHeight);
+}
