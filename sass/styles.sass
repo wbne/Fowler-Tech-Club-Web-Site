@@ -11,8 +11,6 @@ a
 	text-decoration: none
 	color: lightblue
 
-.content-wrap
-	// this is used for nothing right now
 .center-text
 	padding-top: 0px
 	padding-bottom: 0px
@@ -42,9 +40,6 @@ a
 	font-size: 20px
 	color: $textColor
 
-#copyright
-	font-size: 11px
-
 .sidenav
 	height: 100%
 	width: 0
@@ -57,15 +52,16 @@ a
 	padding-top: 60px
 	transition: 0.5s
 
-	> a
+	> a, p
 		padding: 8px 8px 8px 8px
 		text-decoration: none
 		font-size: 25px
 		color: #818181
 		display: block
 		transition: 0.3s
+		word-wrap: initial
 
-	> a:hover, .offcanvas, a:focus
+	> a:hover, .offcanvas, a:focus, p:hover, p:focus
 		color: #f1f1f1
 
 .sidenav, .closebtn,
@@ -79,7 +75,17 @@ a
 	transition: margin-left .5s
 	padding: 20px
 
-@media sceen and (max-height: 450px)
+	> p
+		font-size: 1.5vw
+
+	#copyright
+		font-size: 12px
+
+#nitro
+	text-decoration: underline
+#pauseMusic
+	display: none
+@media screen and (max-height: 450px)
 	.sidenav
 		padding-top: 15px
 		> a
