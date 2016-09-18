@@ -3,7 +3,7 @@
 @import "partials/normalize"
 @import "partials/base"
 @import "partials/anime"
-@import "_sidenav"
+@import "sidenav"
 
 
 body
@@ -32,7 +32,7 @@ a
 	margin-left: auto
 	margin-right: auto
 
-.parallax
+#parallax
 	position: relative
 	height: 400px
 	background:
@@ -49,6 +49,10 @@ a
 	color: $textColor
 	text-shadow: 6px 6px $backgroundColor
 
+.item
+	perspective: 1000
+	opacity: 0
+
 #content-wrap
 	transition: margin-left .5s
 	padding: 20px
@@ -63,6 +67,9 @@ a
 	text-decoration: underline
 #pauseMusic
 	display: none
+
+.is-visible
+	animation: fade-in-anime 200ms ease-in forwards
 
 @media screen and (max-height: 450px)
 	.sidenav

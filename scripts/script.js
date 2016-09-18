@@ -29,4 +29,10 @@ $(document).ready(function(){
 		$(this).css('display', 'none');
 		$('#playMusic').css('display', 'block');
 	});
+
+	$('.item').each(function(i){
+		setTimeout(function(){
+			$('.item').eq(i).addClass('is-visible');
+		}, 400 * i);
+	});
 });
