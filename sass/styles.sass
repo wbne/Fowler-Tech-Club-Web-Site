@@ -1,13 +1,19 @@
-@import compass
-@import partials/variables
-@import partials/normalize
-@import partials/base
-@import _sidenav
+@import "compass"
+@import "partials/variables"
+@import "partials/normalize"
+@import "partials/base"
+@import "partials/anime"
+@import "_sidenav"
+
 
 body
 	background: $backgroundColor
 	color: $textColor
-
+	animation:
+		name: background-color-shift
+		timing-function: ease-in-out
+		duration: 5s
+		iteration-count: infinite
 a
 	text-decoration: none
 	color: lightblue
