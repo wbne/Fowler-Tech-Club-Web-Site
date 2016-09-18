@@ -30,8 +30,3 @@ $(document).ready(function(){
 		$('#playMusic').css('display', 'block');
 	});
 });
-
-while(true)
-{
-	$('#mainSideNav').height(bodyHeight);
-}
